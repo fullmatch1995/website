@@ -1,0 +1,21 @@
+name = "digitvottwebsite"
+main = "src/index.ts"
+compatibility_date = "2024-03-02"
+compatibility_flags = ["nodejs_compat"]
+
+# After running: wrangler d1 create projekti-im-db
+# paste the returned database_id below
+[[d1_databases]]
+binding = "DB"
+database_name = "digitvott-db"
+database_id = "YOUR_D1_DATABASE_ID_HERE"
+
+# Set JWT secret with: wrangler secret put JWT_SECRET
+# Never put secrets directly in this file
+
+# Vite build output served as static assets
+[assets]
+directory = "./dist/public"
+[[kv_namespaces]]
+binding = "MY_KV"
+id = "bb5efb63ad5642d28938b443455762b3"
