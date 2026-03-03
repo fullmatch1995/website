@@ -1,5 +1,5 @@
 {
-  "name": "digitvott-worker",
+  "name": "projekti-im-worker",
   "version": "1.0.0",
   "type": "module",
   "private": true,
@@ -12,7 +12,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "hono": "^4.4.0"
+    "hono": "^4.12.4"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240529.0",

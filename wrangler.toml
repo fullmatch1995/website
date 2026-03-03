@@ -16,3 +16,6 @@ database_id = "YOUR_D1_DATABASE_ID_HERE"
 # Vite build output served as static assets
 [assets]
 directory = "./dist/public"
+[[kv_namespaces]]
+binding = "MY_KV"
+id = "bb5efb63ad5642d28938b443455762b3"
